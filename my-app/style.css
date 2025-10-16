@@ -1,0 +1,303 @@
+#navbar {
+    background-color: rgb(0,0,0);
+    color: white;
+}
+#navbar .navbar{
+  --bs-navbar-padding-x: 2.25rem; 
+  --bs-navbar-padding-y: 0.8rem; 
+}
+#riotLogo {
+    filter : invert(1);
+    transform: translateY(-1.5px); 
+}
+
+#searchIcon {
+    filter : invert(1);
+    transform: translate(50px, 1px);
+    display: inline-block;     
+    background: rgb(211, 211, 211);      
+    border-radius: 10px;        
+    padding: 10px;            
+    box-sizing: content-box;
+}
+#webIcon {
+    transform: translate(42px, -2px);
+}
+
+#playNow{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: .80rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+
+  display: inline-flex;    
+  align-items: center;      
+  justify-content: center;     
+
+  color: #000;
+  background-color:#50d1f5;
+  height: 35px;
+  padding: 11px;
+  border-radius: 9px;
+
+  line-height: 1;               
+  box-sizing: border-box;       
+  margin-left: 40px;                
+}
+
+#logoDownArrow {
+    font-size: 1rem;
+    transform: translate(-15px, -4px);
+}
+
+#navbar .downArrow {
+    margin-left: 3px;
+}
+
+#navbar .websiteArrow{
+    margin-left: 3px;
+}
+
+
+#leagueLogo {
+    transform: translate(-8px, -3px);
+}
+
+#navbar .navbar-item:first-child .nav-link {
+  margin-left: 0.9rem;
+}
+
+#navbar .navbar-item .nav-link{
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.80rem;
+    font-weight: 502;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    height: 85%;
+    transform: translateY(-4%);
+    margin-left: 1.2rem;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+#leagueOfLegendsLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 20px;
+}
+
+.leagueText {
+font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  font-weight: 950;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,.45);
+
+
+  display: block;
+  text-align: center;
+  white-space: nowrap;      
+  margin: .5rem auto 0;
+  padding: 0 12px;
+}
+
+.playForFreeText{
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:1rem;
+  font-weight:400;
+  text-transform:uppercase;
+  letter-spacing:1px;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#000;
+  background:#cbb175;
+  height:65px;
+  padding:20px;
+
+  line-height:1;
+  box-sizing:border-box;
+  margin-top:20px;
+  transform : translateY(50px);
+
+  box-shadow:          
+    0 0 0 2px #000,               
+    0 0 0 4px #fff;       
+}
+
+#newsHighlightsText {
+    transform: translate(7vh, 30vh);
+    font-family: "Cinzel", Georgia, "Times New Roman", serif; /* or your Beaufort equivalent */
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+#viewAllNews {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    transform: translate(-6vh, 24vh);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* overall spacing matches your screenshot vibe */
+.news-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* image block: fixed aspect, cover, subtle hover lift */
+.news-media {
+  position: relative;
+
+  overflow: hidden;
+  /* 16:9 aspect; adjust if you prefer */
+  aspect-ratio: 16 / 9;
+  background: #111;
+}
+.news-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform .35s ease, filter .35s ease;
+}
+.news-card:hover .news-media img {
+  transform: scale(1.03);
+  filter: brightness(1.02);
+}
+
+/* small corner “expand” chip */
+.zoom-chip {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(20, 26, 33, .85);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+
+/* category + date row */
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  margin-top: 14px;
+  color: #9aa6b2;
+  font: 600 0.85rem/1.2 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+/* gold-ish category */
+.badge-cat {
+  color: #cbb675;
+}
+
+/* Bootstrap's .vr is width 1px; make sure it stretches to text height */
+.news-meta .vr { align-self: stretch; background-color: rgba(153, 153, 153, .35); }
+
+/* headline */
+.news-title {
+  margin: 8px 0 6px;
+  font-family: "Cinzel", Georgia, "Times New Roman", serif; /* or your Beaufort equivalent */
+  font-weight: 900;
+  font-style: italic;
+  text-transform: none;    /* headlines in the screenshot are Title Case */
+  letter-spacing: .01em;
+  color: #0b0f12;
+  font-size: clamp(1.1rem, 1.1rem + 0.6vw, 1.8rem);
+}
+
+/* excerpt */
+.news-excerpt {
+  margin: 0;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 40ch; /* readable width similar to screenshot */
+}
+
+/* optional subtle background like Riot site */
+body {
+  background:
+    radial-gradient(ellipse at top left, rgba(0,0,0,.04), transparent 40%),
+    radial-gradient(ellipse at bottom right, rgba(0,0,0,.04), transparent 40%),
+    repeating-linear-gradient(45deg, rgba(0,0,0,.03) 0 2px, transparent 2px 10px),
+    #f7f5ef;
+}
+
+/* container */
+.site-footer { color:#fff; font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif; }
+
+/* top link bar */
+.footer-top{
+  background:#222;           /* slightly lighter */
+  border-bottom:1px solid rgba(255,255,255,.06);
+  padding:16px 0;
+}
+.ft-top-link{
+  color:#fff; text-transform:uppercase; letter-spacing:.08em; font-weight:700;
+  font-size:.80rem; text-decoration:none;
+}
+.ft-top-link:hover{ opacity:.85; }
+
+/* main dark block */
+.footer-main{ background:#111; }
+
+/* social pills */
+.social-pill{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:44px; height:44px; border-radius:10px;
+  background:#1b1b1b; color:#fff; text-decoration:none; font-size:20px;
+  border:1px solid rgba(255,255,255,.08);
+  transition:transform .12s ease, .2s ease, border-color .2s ease;
+}
+.social-pill:hover{ transform:translateY(-2px); background:#232323; border-color:rgba(255,255,255,.18); }
+
+/* legal + policy */
+.legal{ color:#838383; font-size:.75rem; line-height:1.5; max-width:900px; margin-inline:auto; }
+.ft-policy{
+  color:#fff; text-transform:uppercase; letter-spacing:.08em; font-weight:800; text-decoration:none;
+}
+.ft-policy:hover{ opacity:.85; }
+
+/* ESRB card */
+.esrb-card{
+  background:#1b1b1b; border-radius:12px; padding:16px 20px;
+  border:1px solid rgba(255,255,255,.08); max-width:640px; width:100%;
+}
+.esrb-text{ color:#fff; font-weight:800; font-size:1.05rem; line-height:1.45; }
+
+.footer-logo{
+  filter: invert(1) grayscale(1) brightness(0.4) contrast(.9);
+  opacity: .9; /* optional softness */
+}
